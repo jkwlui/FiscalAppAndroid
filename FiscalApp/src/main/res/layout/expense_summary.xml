@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/month_relativelayout"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_action_previous_item"
+            android:id="@+id/expense_last_month_button"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_action_next_item"
+            android:id="@+id/expense_next_month_button"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="March 2013"
+            android:textSize="30sp"
+            android:id="@+id/expense_summary_month_textview" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/info_divider"
+        android:layout_height="1px"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/listview_divider"
+        android:layout_below="@+id/month_relativelayout"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="@string/expenses"
+        android:id="@+id/this_month_expenses_textview"
+        android:textSize="18sp"
+        android:layout_below="@+id/info_divider"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="0"
+        android:id="@+id/this_month_amount_textview"
+        android:textColor="@color/dark_blue"
+        android:textSize="18sp"
+        android:layout_below="@+id/info_divider"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

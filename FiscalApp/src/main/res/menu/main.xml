@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fiscalapp.fiscalapp.MainActivity" >
+
+
+    <item
+        android:id="@+id/menu_new_expense"
+        android:icon="@drawable/ic_action_new_expense"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        android:title="@string/new_expense"/>
+</menu>

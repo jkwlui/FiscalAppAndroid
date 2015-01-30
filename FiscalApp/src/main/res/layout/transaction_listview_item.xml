@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_background"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/firstDivider"
+        android:layout_height="1px"
+        android:layout_width="fill_parent"
+        android:background="@drawable/listview_divider" />
+
+
+    <ImageView
+        android:id="@+id/transaction_listview_category_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:src="@drawable/cat_icon_1" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/transaction_listview_category_icon"
+        android:layout_marginLeft="10dp"
+         >
+
+        <TextView
+            android:id="@+id/transaction_list_category_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/transaction_list_info_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/transaction_list_category_textview"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginBottom="4dp"
+             />
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/transaction_list_amuont_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:textColor="@color/dark_blue"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

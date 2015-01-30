@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="purple_light">#a276eb</color>
+    <color name="purple_middle">#8658ce</color>
+    <color name="purple_dark">#6a3ab2</color>
+    <color name="gray">#e6e6e6</color>
+    <color name="dark_gray">#3e3e3e</color>
+    <color name="darker_gray">#333333</color>
+    <color name="list_textcolor">#575757</color>
+    <color name="md__transparent">#00000000</color>
+    <color name="md__defaultBackground">#FF555555</color>
+    <color name="new_button_background">#333333</color>
+    <color name="new_button_textcolor">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#33B5E5</color>
+    <color name="dark_blue">#0099cc</color>
+    <color name="green">#99cc00</color>
+    <color name="dark_green">#669900</color>
+    <color name="transparent">#ffffff</color>
+
+
+</resources>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="10dp">
+
+
+    <TableLayout
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/new_expense_category_tablerow"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/new_expense_category_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/cat_icon_gray"/>
+
+                <TextView
+                    android:id="@+id/new_expense_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/rectangle"
+                    android:text="@string/new_expense_select_category"
+                    android:maxLines="1"
+                    android:textSize="20sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/new_expense_category_icon">
+
+                </TextView>
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/new_expense_description_tablerow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:divider="@drawable/listview_divider">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_edit"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="8dp" />
+
+            <EditText
+                android:id="@+id/new_expense_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle"
+                android:textSize="20sp"
+                android:hint="@string/new_expense_description_hint"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView2"
+                android:layout_marginLeft="17dp" />
+        </RelativeLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/new_expense_date_tablerow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/dateIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_go_to_today"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:id="@+id/new_expense_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle"
+                android:textSize="20sp"
+                android:hint="@string/new_expense_date_today"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/dateIcon"
+                android:layout_marginLeft="17dp" />
+        </RelativeLayout>
+
+    </TableRow>
+        <TableRow
+            android:id="@+id/new_expense_location_tablerow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:clickable="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/locationIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_place"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="8dp" />
+
+                <TextView
+                    android:id="@+id/new_expense_location_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle"
+                    android:textSize="20sp"
+                    android:hint="@string/new_expense_location"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/locationIcon"
+                    android:layout_toLeftOf="@+id/location_cancel"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginEnd="6dp"/>
+                <ImageView
+                    android:id="@+id/location_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_backspace"
+                    android:layout_marginRight="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

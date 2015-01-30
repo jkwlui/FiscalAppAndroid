@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <EditText android:id="@+id/nearby_places_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_nearby_places"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dip"
+        android:maxLines="1"
+        android:inputType="text"
+        android:layout_toLeftOf="@+id/nearby_places_button" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nearby_places_button"
+        android:src="@drawable/ic_action_place"
+        android:layout_alignBottom="@+id/nearby_places_edittext"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <!--  List view -->
+    <ListView
+        android:id="@+id/location_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nearby_places_edittext"/>
+
+</RelativeLayout>
